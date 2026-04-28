@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Home from './pages/Home';
 import About from './pages/About';
 import CaseStudyDetail from './pages/CaseStudyDetail';
@@ -18,6 +19,7 @@ function App() {
         {/* Fallback to home */}
         <Route path="*" element={<Home />} />
       </Routes>
+      <SpeedInsights />
     </Router>
   );
 }
